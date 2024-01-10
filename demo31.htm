@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>demo31</title>
+        <script>
+            //template literal
+            const name = "klu"
+            document.writeln(`<b>My name is ${name}</b>`) // ` backtick
+            document.writeln("</br>")
+
+            //spread operator
+            const a = [3,4,5]
+            const b = [...a,6,7]
+            document.writeln(a+"</br>")
+            document.writeln(b+"</br>")
+
+            const p = [10,20,30]
+            const q = [40,50,60]
+            const r = [...p,...q]
+            document.writeln(p+"</br>")
+            document.writeln(q+"</br>")
+            document.writeln(r+"</br>")
+
+            const v1 = "kluniversity"
+            const v2 = [...v1]
+            document.writeln("v1="+v1+"</br>")
+            document.writeln("v2="+v2+"</br>") // iterable
+            
+            // destructing assignment
+            const arr = ["os","aws",10,30]
+            document.writeln("arr="+arr+"</br>")
+            document.writeln("arr length="+arr.length+"</br>")
+
+            const [m,s,w,d] = arr
+            document.writeln(m+"</br>")
+            document.writeln(s+"</br>")
+            document.writeln(w+"</br>")
+            document.writeln(d+"</br>")
+
+            const [i,,j] = arr
+            document.writeln(i+"</br>")
+            document.writeln(j+"</br>")
+
+            const [x,y] = arr
+            document.writeln(x+"</br>")
+            document.writeln(y+"</br>")
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
